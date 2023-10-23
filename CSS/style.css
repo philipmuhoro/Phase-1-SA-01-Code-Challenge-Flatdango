@@ -51,3 +51,7 @@ body {
     cursor: pointer;
 }
 
+#buy-ticket:hover {
+    background-color: #2a8ee0ec;
+}
+
