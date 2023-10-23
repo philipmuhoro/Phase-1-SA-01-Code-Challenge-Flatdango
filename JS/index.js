@@ -56,7 +56,7 @@ function buyTicket() {
 
 // Function to fetch movie data from the JSON server
 function fetchMovieData() {
-    fetch('http://localhost:3000/films') // Change this URL when I start deploying.
+    fetch('https://my-json-server.typicode.com/philipmuhoro.github.io/Phase-1-SA-01-Code-Challenge-Flatdango/') // Change this URL when deploying
         .then(response => response.json())
         .then(data => {
             if (data && data.length > 0) {
