@@ -71,3 +71,14 @@ function fetchMovieData() {
         })
         .catch(error => console.error("Error fetching movie data: " + error));
 }
+
+// Event listener for selecting movie 
+movieList.addEventListener("click", (event) => {
+    if (event.target.tagName === "A") {
+        const movieId = event.target.parentElement.dataset.id;
+        const selectedMovie = data.find(movie => movie.id === movieId);
+        if (selectedMovie) {
+            updateMovieDetails(selectedMovie);
+        }
+    }
+});
