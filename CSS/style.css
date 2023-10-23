@@ -9,24 +9,28 @@ body {
 }
 
 #movie-details {
-    background-color: #fff;
-    border: 1px solid #ccc;
+    background-color: pink;
+    border: 1px solid palevioletred;
     border-radius: 5px;
     padding: 20px;
     margin: 20px;
-    display: none;
+    display: none;  
 }
-
 
 #movie-details h1 {
     font-size: 24px;
     margin-bottom: 10px;
-    color: aqua;
+    color: brown;
 }
 
 #movie-poster {
     width: 100px;
     height: 150px;
-    float: left;
+    float:none ;
     margin-right: 20px;
+}
+
+#movie-title {
+    font-size: 25px;
+    margin-bottom: 10px;
 }
