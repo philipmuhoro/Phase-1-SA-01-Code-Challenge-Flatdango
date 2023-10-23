@@ -44,3 +44,12 @@ function createMovieListItem(movie) {
 
     return li;
 }
+
+// Function to handle ticket purchase
+function buyTicket() {
+    if (selectedMovie && parseInt(availableTickets.textContent) > 0) {
+        const newAvailableTickets = parseInt(availableTickets.textContent) - 1;
+        availableTickets.textContent = newAvailableTickets;
+        selectedMovie.tickets_sold++;
+    }
+}
