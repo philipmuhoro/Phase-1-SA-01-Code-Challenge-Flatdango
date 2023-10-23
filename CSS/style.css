@@ -61,4 +61,15 @@ ul#films {
     margin: 20px;
 }
 
+ul#films li {
+    background-color: pink;
+    border: 1px solid palevioletred;
+    border-radius: 5px;
+    margin: 0 0 10px 0;
+    padding: 10px;
+    display: flex;
+    align-items: center; 
+}
+
+
 
