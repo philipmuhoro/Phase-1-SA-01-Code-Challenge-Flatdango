@@ -53,3 +53,21 @@ function buyTicket() {
         selectedMovie.tickets_sold++;
     }
 }
+
+// Function to fetch movie data from the JSON server
+function fetchMovieData() {
+    fetch('http://localhost:3000/films') // Change this URL when I start deploying.
+        .then(response => response.json())
+        .then(data => {
+            if (data && data.length > 0) {
+                const firstMovie = data[0]; // Get the first movie
+                updateMovieDetails(firstMovie);
+
+                data.forEach(movie => {
+                    const li = createMovieListItem(movie);
+                    movieList.appendChild(li);
+                });
+            }
+        })
+        .catch(error => console.error("Error fetching movie data: " + error));
+}
