@@ -82,3 +82,6 @@ movieList.addEventListener("click", (event) => {
         }
     }
 });
+
+// Event listener for purchasing tickets
+buyTicketButton.addEventListener("click", buyTicket);
