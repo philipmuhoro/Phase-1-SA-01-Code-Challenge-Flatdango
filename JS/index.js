@@ -85,3 +85,7 @@ movieList.addEventListener("click", (event) => {
 
 // Event listener for purchasing tickets
 buyTicketButton.addEventListener("click", buyTicket);
+
+// Fetch movie data when the page loads
+fetchMovieData();
+
