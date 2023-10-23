@@ -71,5 +71,11 @@ ul#films li {
     align-items: center; 
 }
 
+ul#films li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: blue;
+}
+
 
 
